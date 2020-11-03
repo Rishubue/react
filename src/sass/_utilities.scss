@@ -1,0 +1,54 @@
+.margin-bottom-smallest {
+  margin-bottom: 0.7rem;
+}
+
+.margin-bottom-small {
+  margin-bottom: 1.65rem;
+}
+
+.margin-bottom-medium {
+  margin-bottom: 4rem;
+}
+
+.margin-bottom-big {
+  margin-bottom: 6rem;
+}
+
+.margin-bottom-bigest {
+  margin-bottom: 9rem;
+}
+
+.center {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.small {
+  text-transform: none;
+}
+
+.current {
+  color: $color-second;
+  transition: color 0.3s;
+}
+
+.row {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.second {
+  color: $color-second;
+}
+
+.white {
+  color: $color-white;
+}
+
+.prim {
+  color: $color-prim;
+}
+
+.margin-right {
+  margin-right: 2rem;
+}
