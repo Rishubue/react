@@ -1,12 +1,12 @@
 import React from "react"
-import Navbar from "../components/Navbar"
+import Hero from "../components/Hero/Hero"
 import Footer from "../components/Footer"
 import "../sass/main.scss"
 
 const Layout = ({ children }) => {
   return (
     <>
-      <Navbar />
+      <Hero />
       <section>{children}</section>
       <Footer />
     </>

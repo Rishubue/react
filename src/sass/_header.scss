@@ -1,0 +1,57 @@
+.header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.644), rgba(0, 0, 0, 0.603)),
+    url(../images//about_img-2.jpeg);
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  font-size: 26px;
+  color: #fff;
+  &__text-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 25rem;
+
+    // @media only screen and (max-width: $bp-small) {
+    //   margin: 0 auto;
+    //   text-align: center;
+    // }
+  }
+}
+
+.header-about {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.808), rgba(0, 0, 0, 0.719)),
+    url(/img/hero.jpg);
+  height: 60vh;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+
+  &__text-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 18rem;
+    text-align: center;
+  }
+}
+
+.header-contact {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.808), rgba(0, 0, 0, 0.719)),
+    url(/img/hero-1.jpeg);
+  height: 60vh;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+
+  &__text-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 18rem;
+    text-align: center;
+  }
+}
