@@ -1,10 +1,11 @@
 import React from "react"
+import Layout from '../components/Layout'
 
 const about = () => {
   return (
-    <div>
+    <Layout>
       <h2>o namna</h2>
-    </div>
+    </Layout>
   )
 }
 
