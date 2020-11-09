@@ -4,7 +4,6 @@ import About from "../components/Home/About"
 import Meals from "../components/Home/Meals"
 import Features from "../components/Home/Features"
 
-
 export default function Home() {
   return (
     <Layout>
