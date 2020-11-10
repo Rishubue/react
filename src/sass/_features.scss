@@ -1,0 +1,34 @@
+features {
+    
+    &__container {
+        display: grid;
+        // grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        width: 30rem;
+        margin-bottom: 5rem;
+    }
+
+    &__icon {
+        fill: $color-second;
+        height: 3rem;
+        width: auto;
+    }
+
+    &__text {
+        color: $color-prim;
+        font-size: 1.5rem;
+        letter-spacing: .2rem;
+        font-weight: 500;
+    }
+}

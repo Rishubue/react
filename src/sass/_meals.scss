@@ -1,0 +1,39 @@
+.meals {
+    background-color: $color-white;
+
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+         @media only screen and (max-width: $bp-medium) {
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__img {
+        width: 20rem;
+        height: 25rem;
+    }
+
+    &__title {
+        color: $color-prim;
+        font-size: 1.7rem;
+        font-family: $font-second;
+    }
+
+    &__text {
+        color: $color-grey-dark;
+        width: 80%;
+        line-height: 1.6;
+        text-align: center;
+    }
+}
