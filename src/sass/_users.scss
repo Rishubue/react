@@ -1,0 +1,50 @@
+.users {
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba($color-second, 0.5);
+    height: 25rem;
+    width: 80%;
+    border-radius: 5px;
+    margin: 0 auto;
+    box-shadow: 0 2rem 3rem rgba(#000, 0.2);
+  }
+
+  &__heading {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-bottom: 1.5rem;
+  }
+
+  &__icon {
+    fill: rgb(97, 71, 7);
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+
+  &__name {
+    font-size: 1.8rem;
+    font-family: $font-second;
+    color: $color-prim-light;
+    letter-spacing: 0.3rem;
+  }
+
+  &__text {
+    font-size: 1.3rem;
+    width: 90%;
+    text-align: center;
+    line-height: 1.7;
+  }
+
+  &__arrows {
+    color: $color-prim;
+  }
+}
+
+.swiper-container {
+  width: 100%;
+}

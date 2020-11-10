@@ -1,0 +1,113 @@
+.events {
+  padding: 0;
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__item {
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+    &--1 {
+      background-image: linear-gradient(
+          rgba($color-prim, 0.7),
+          rgba($color-prim, 0.7)
+        ),
+        url(../images/plates.jpg);
+
+      &:hover {
+        background-image: linear-gradient(
+            rgba($color-prim, 0.5),
+            rgba($color-prim, 0.5)
+          ),
+          url(../images/plates.jpg);
+      }
+    }
+
+    &--2 {
+      background-image: linear-gradient(
+          rgba($color-prim, 0.7),
+          rgba($color-prim, 0.7)
+        ),
+        url(../images/wine.jpg);
+
+      &:hover {
+        background-image: linear-gradient(
+            rgba($color-prim, 0.5),
+            rgba($color-prim, 0.5)
+          ),
+          url(../images/wine.jpg);
+      }
+    }
+
+    &--3 {
+      background-image: linear-gradient(
+          rgba($color-prim, 0.7),
+          rgba($color-prim, 0.7)
+        ),
+        url(../images/celebration.jpg);
+
+      &:hover {
+        background-image: linear-gradient(
+            rgba($color-prim, 0.5),
+            rgba($color-prim, 0.5)
+          ),
+          url(../images/celebration.jpg);
+      }
+    }
+  }
+
+  &__text-box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+  }
+
+  &__text {
+    font-size: 5rem;
+    font-weight: 300;
+    font-family: $font-second;
+    color: rgba($color-grey-light, 0.89);
+    text-align: center;
+  }
+
+  &__call {
+    position: absolute;
+    width: 40%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-second;
+    clip-path: polygon(0 0, 100% 54%, 100% 100%, 0% 100%);
+    border-top-right-radius: 0.5rem;
+    bottom: 0;
+    left: 0;
+
+    &--text {
+      font-size: 2rem;
+      font-weight: 300;
+      color: rgba($color-grey-light, 0.89);
+    }
+
+    &--num {
+      font-size: 2rem;
+      font-weight: 300;
+      margin-top: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      // color: rgba($color-second, .89);
+    }
+  }
+}
