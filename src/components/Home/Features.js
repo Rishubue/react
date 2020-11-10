@@ -9,12 +9,10 @@ const Features = () => {
         <div className="features__container">
           {icons.map((icon, index) => {
             return (
-              <div className="features__item">
-                <img
-                  className="features__icon margin-bottom-small"
-                  key={index}
-                  src={icon.icon}
-                />
+              <div className="features__item" key={index}>
+                <a className="features__icon margin-bottom-small">
+                  {icon.icon}
+                </a>
                 <h6 className="features__text">{icon.text}</h6>
               </div>
             )

@@ -14,22 +14,22 @@ export default [
   },
   {
     icon: <IoIosRestaurant />,
-    url: "Vrhunska hrana",
-  },
-  {
-    icon: <IoIosStar />,
-    url: "Prijantnu atmosferu",
-  },
-  {
-    icon: <IoIosWifi />,
-    url: "Internet velike brzine",
-  },
-  {
-    icon: <IoIosWallet />,
-    url: "Pristupacne cene",
+    text: "Vrhunska hrana",
   },
   {
     icon: <IoIosWine />,
-    url: "Sve vrste pica",
+    text: "Sve vrste pica",
+  },
+  {
+    icon: <IoIosStar />,
+    text: "Prijantnu atmosferu",
+  },
+  {
+    icon: <IoIosWifi />,
+    text: "Internet velike brzine",
+  },
+  {
+    icon: <IoIosWallet />,
+    text: "Pristupacne cene",
   },
 ]
