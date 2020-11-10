@@ -18,25 +18,6 @@ const getMeals = graphql`
     }
   }
 `
-import { useStaticQuery, graphql } from "gatsby"
-import Image from "gatsby-image"
-
-const getMeals = graphql`
-  query {
-    meals: allContentfulMeal {
-      nodes {
-        title
-        description
-        id: contentful_id
-        image {
-          fluid {
-            ...GatsbyContentfulFluid
-          }
-        }
-      }
-    }
-  }
-`
 const Meals = () => {
   const { meals } = useStaticQuery(getMeals)
 

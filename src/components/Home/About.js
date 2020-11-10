@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from 'gatsby'
 import img from "../../images/about_img.jpeg"
 import img2 from "../../images/about_img-2.jpeg"
 
@@ -26,9 +27,9 @@ const About = () => {
               nulla. Vel deserunt nihil eum odit asperiores molestiae commodi,
               nam voluptates. Dolorem neque quos ipsa exercitationem.
             </p>
-            <a href="about.html" className="about__btn">
+            <Link to="/about" className="about__btn">
               Saznajte vise o nama
-            </a>
+            </Link>
           </div>
         </div>
       </div>

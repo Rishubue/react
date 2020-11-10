@@ -4,6 +4,7 @@ import About from "../components/Home/About"
 import Meals from "../components/Home/Meals"
 import Menu from "../components/Home/Menu"
 import Features from "../components/Home/Features"
+import Info from "../components/Home/Info"
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Meals />
       <Menu />
       <Features />
+      <Info />
     </Layout>
   )
 }

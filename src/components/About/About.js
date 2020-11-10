@@ -26,9 +26,12 @@ const About = () => {
               nulla. Vel deserunt nihil eum odit asperiores molestiae commodi,
               nam voluptates. Dolorem neque quos ipsa exercitationem.
             </p>
-            <a href="about.html" className="about__btn">
-              Saznajte vise o nama
-            </a>
+            <p className="long-text margin-bottom-medium">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse,
+              nulla. Vel deserunt nihil eum odit asperiores molestiae commodi,
+              nam voluptates. Dolorem neque quos ipsa exercitationem.
+            </p>
+            
           </div>
         </div>
       </div>
