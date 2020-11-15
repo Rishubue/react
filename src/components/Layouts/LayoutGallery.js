@@ -1,7 +1,7 @@
 import React from "react"
-import Hero from "../components/Hero/Hero"
-import Footer from "../components/Footer"
-import "../sass/main.scss"
+import Hero from "../Hero/HeroGallery"
+import Footer from "../Footer"
+import "../../sass/main.scss"
 
 const Layout = ({ children }) => {
   return (
