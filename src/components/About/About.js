@@ -7,10 +7,10 @@ const About = () => {
     <section className="about">
       <div className="row">
         <div className="about__container">
-          <div className="about__img">
+          {/* <div className="about__img">
             <img className="about__img--2" src={img} alt="slika 2"></img>
             <img className="about__img--1" src={img2} alt="slika 1"></img>
-          </div>
+          </div> */}
 
           <div className="about__text-box">
             <h4 className="logo-text-sm  margin-bottom-small second">Ovo je</h4>
@@ -21,14 +21,37 @@ const About = () => {
               Duis aute irure dolor in reprehenderit in voluptate”.
             </p>
 
-            <p className="long-text margin-bottom-medium">
+            <p className="long-text margin-bottom-small">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse,
               nulla. Vel deserunt nihil eum odit asperiores molestiae commodi,
               nam voluptates. Dolorem neque quos ipsa exercitationem.
             </p>
-            <a href="about.html" className="about__btn">
-              Saznajte vise o nama
-            </a>
+            <p className="long-text margin-bottom-small">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse,
+              nulla. Vel deserunt nihil eum odit asperiores molestiae commodi,
+              nam voluptates. Dolorem neque quos ipsa exercitationem. nam
+              voluptates. Dolorem neque quos ipsa exercitationem. nam
+              voluptates. Dolorem neque quos ipsa exercitationem.
+            </p>
+            <p className="long-text margin-bottom-small">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse,
+              nulla. Vel deserunt nihil eum odit asperiores molestiae commodi,
+              nam voluptates. Dolorem neque quos ipsa exercitationem. nam
+              voluptates. Dolorem neque quos ipsa exercitationem. nam
+              voluptates. Dolorem neque quos ipsa exercitationem.
+            </p>
+            <p className="long-text margin-bottom-small">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse,
+              nulla. Vel deserunt nihil eum odit asperiores molestiae commodi,
+              nam voluptates. Dolorem neque quos ipsa exercitationem. nam
+              voluptates. Dolorem neque quos ipsa exercitationem. nam
+              voluptates. Dolorem neque quos ipsa exercitationem.
+            </p>
+            <p className="long-text margin-bottom-small">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse,
+              nulla. Vel deserunt nihil eum odit asperiores molestiae commodi,
+              nam voluptates. Dolorem neque quos ipsa exercitationem.
+            </p>
           </div>
         </div>
       </div>

@@ -3,6 +3,12 @@ import { Link } from "gatsby"
 import links from "../constans/links"
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = React.useState(false)
+  const toggleNav = () => {
+    setIsOpen(isOpen => !isOpen)
+    console.log(isOpen)
+  }
+
   return (
     <nav className="nav">
       <div className="nav__logo-box">
@@ -10,7 +16,7 @@ const Navbar = () => {
           restoran
         </Link>
       </div>
-      <ul className="nav__list">
+      <ul className={`nav__list ${isOpen ? "active" : ""}`}>
         {links.map(link => {
           return (
             <li className="nav__item">
@@ -22,6 +28,11 @@ const Navbar = () => {
           )
         })}
       </ul>
+      <div className="nav__burger" onClick={toggleNav}>
+        <div className="nav__burger--line"></div>
+        <div className="nav__burger--line"></div>
+        <div className="nav__burger--line"></div>
+      </div>
     </nav>
   )
 }

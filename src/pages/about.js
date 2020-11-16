@@ -1,15 +1,13 @@
 import React from "react"
-import Layout from "../components/Layout"
+import Layout from "../components/Layouts/LayoutAbout"
 import About from "../components/About/About"
-import Events from "../components/About/Events"
 import Users from "../components/About/Users"
 
 const about = () => {
   return (
-    <Layout>
-      <About></About>
-      <Events></Events>
-      <Users></Users>
+    <Layout styleClass="header-about">
+      <About />
+      <Users />
     </Layout>
   )
 }

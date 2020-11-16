@@ -22,7 +22,25 @@
 
 .header-about {
   background-image: linear-gradient(rgba(0, 0, 0, 0.808), rgba(0, 0, 0, 0.719)),
-    url(/img/hero.jpg);
+    url(../images/salad.jpg);
+  height: 60vh;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+
+  &__text-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 18rem;
+    text-align: center;
+  }
+}
+
+.header-gallery {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.808), rgba(0, 0, 0, 0.719)),
+    url(../images/hero-1.jpeg);
   height: 60vh;
   background-position: center;
   background-size: cover;
@@ -40,7 +58,7 @@
 
 .header-contact {
   background-image: linear-gradient(rgba(0, 0, 0, 0.808), rgba(0, 0, 0, 0.719)),
-    url(/img/hero-1.jpeg);
+    url(../images/hero.jpg);
   height: 60vh;
   background-position: center;
   background-size: cover;

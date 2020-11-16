@@ -1,11 +1,12 @@
 import React from "react"
+import Layout from "../components/Layouts/LayoutContact"
 
-const contact = () => {
+const gallery = () => {
   return (
-    <div>
+    <Layout>
       <h2>kontakt</h2>
-    </div>
+    </Layout>
   )
 }
 
-export default contact
+export default gallery
