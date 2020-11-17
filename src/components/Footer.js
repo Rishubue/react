@@ -41,9 +41,7 @@ const Footer = () => {
       </div>
 
       <div class="footer__copyright">
-        <p class="footer__copyright--text">
-          Restoran Kutak &copy; <span id="year"></span>
-        </p>
+        <p class="footer__copyright--text">Restoran Kutak &copy;</p>
       </div>
     </footer>
   )
