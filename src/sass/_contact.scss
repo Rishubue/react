@@ -1,0 +1,89 @@
+.contact {
+  &__heading {
+    font-size: 6rem;
+    color: $color-second;
+    text-transform: capitalize;
+    text-align: center;
+    font-family: $font-second;
+    font-weight: 300;
+    margin-bottom: 3rem;
+  }
+
+  &__container {
+    width: 100%;
+    max-width: 85rem;
+    padding: 5rem 2rem;
+    margin: 0 auto;
+    box-shadow: 0 2rem 3rem rgba($color-black, 0.3);
+
+    @media screen and (max-width: $bp-largest) {
+      max-width: 65rem;
+      width: 90%;
+    }
+  }
+
+  &__map {
+    width: 100%;
+    max-width: 85rem;
+    margin: 0 auto;
+    box-shadow: 0 2rem 3rem rgba($color-black, 0.3);
+    border: none;
+
+    @media screen and (max-width: $bp-largest) {
+      max-width: 65rem;
+      width: 90%;
+    }
+  }
+
+  &__top {
+    display: flex;
+    width: 100%;
+  }
+
+  &__text {
+    width: 100%;
+    margin-bottom: 2rem;
+    padding: 0.3rem;
+    outline: none;
+    border: 1px solid $color-prim;
+    resize: vertical;
+    background-color: $color-grey-light;
+    font-family: $font-prim;
+
+    &::placeholder {
+      color: $color-prim;
+    }
+  }
+
+  &__btn {
+    background-color: $color-prim;
+    color: $color-white;
+    border: none;
+    outline: none;
+    font-size: 1.9rem;
+    padding: 1.2rem 5rem;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: $color-prim-light;
+    }
+  }
+}
+
+input {
+  display: block;
+  width: 100%;
+  height: 3.5rem;
+  margin-bottom: 2rem;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid $color-prim;
+  background-color: $color-grey-light;
+  font-family: $font-prim;
+  transition: all 0.3s ease;
+
+  &::placeholder {
+    color: $color-prim;
+  }
+}

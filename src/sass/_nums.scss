@@ -1,0 +1,44 @@
+.nums {
+  background-color: $color-prim;
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+
+    @media screen and (max-width: $bp-medium) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__icon {
+    font-size: 6rem;
+    color: $color-second;
+    margin-bottom: 1.5rem;
+  }
+
+  &__num {
+    font-size: 1.6rem;
+    color: $color-grey-dark;
+    font-family: $font-second;
+    margin-bottom: 1.5rem;
+  }
+
+  &__text {
+    font-size: 1.7rem;
+    color: $color-grey-light;
+    font-weight: 300;
+    font-style: italic;
+    text-transform: capitalize;
+  }
+}

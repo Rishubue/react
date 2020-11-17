@@ -1,16 +1,45 @@
 import React from "react"
-import { Link } from 'gatsby'
-import img from "../../images/about_img.jpeg"
-import img2 from "../../images/about_img-2.jpeg"
+import { Link } from "gatsby"
+import Image from "gatsby-image"
+import { useStaticQuery, graphql } from "gatsby"
+// import img from "../../images/about_img.jpeg"
+// import img2 from "../../images/about_img-2.jpeg"
+
+const query = graphql`
+  {
+    file(relativePath: { eq: "about_img.jpeg" }) {
+      img1: childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+
+    files: file(relativePath: { eq: "about_img-2.jpeg" }) {
+      img2: childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`
 
 const About = () => {
+  const {
+    file: { img1 },
+  } = useStaticQuery(query)
+  const {
+    files: { img2 },
+  } = useStaticQuery(query)
+
   return (
     <section className="about">
       <div className="row">
         <div className="about__container">
           <div className="about__img">
-            <img className="about__img--2" src={img} alt="slika 2"></img>
-            <img className="about__img--1" src={img2} alt="slika 1"></img>
+            <Image className="about__img--1" fluid={img1.fluid} alt="slika 1" />
+            <Image className="about__img--2" fluid={img2.fluid} alt="slika 2" />
           </div>
 
           <div className="about__text-box">
