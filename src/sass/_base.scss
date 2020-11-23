@@ -3,7 +3,7 @@
 // COLORS
 $color-prim: #0f161f;
 $color-prim-dark: #0a131d;
-$color-prim-light: #232831;
+$color-prim-light: #131620;
 $color-second: #e7b06c;
 $color-second-dark: #be8a4ac9;
 // $color-second: #ee553a;
@@ -61,8 +61,8 @@ li {
 }
 
 .spinner-wrapper {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   background-color: $color-black;
   position: absolute;
   top: 0;
@@ -82,6 +82,8 @@ li {
 
 .spinner h2 {
   animation: pulse 3s infinite linear;
+  font-size: 7rem;
+  text-transform: capitalize;
   z-index: 999999;
 }
 
