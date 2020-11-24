@@ -2,6 +2,7 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import SwiperCore, { Navigation } from "swiper"
 import { Swiper, SwiperSlide } from "swiper/react"
+import { VscStarFull } from "react-icons/vsc"
 import "swiper/swiper-bundle.css"
 
 SwiperCore.use(Navigation)
@@ -58,7 +59,13 @@ const Users = () => {
                         <div className="users__item" key={user.id}>
                           <div className="users__heading">
                             <h4 className="users__name">{user.name}</h4>
-                            <div className="users__icon--box">zvijezdice</div>
+                            <div className="users__icon--box">
+                              <VscStarFull className="users__icon" />
+                              <VscStarFull className="users__icon" />
+                              <VscStarFull className="users__icon" />
+                              <VscStarFull className="users__icon" />
+                              <VscStarFull className="users__icon" />
+                            </div>
                           </div>
                           <p className="users__text">{user.text}</p>
                         </div>

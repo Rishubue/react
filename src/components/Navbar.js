@@ -1,16 +1,37 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 import { Link } from "gatsby"
 import links from "../constans/links"
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = React.useState(false)
+  const [isOpen, setIsOpen] = useState(false)
+  const [sticky, setSticky] = useState(false)
   const toggleNav = () => {
     setIsOpen(isOpen => !isOpen)
     console.log(isOpen)
   }
 
+  const handleNav = () => {
+    let position = window.pageYOffset
+
+    if (position > 300) {
+      setSticky(true)
+    } else if (position < 300) {
+      setSticky(false)
+    } else {
+      setSticky(false)
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleNav)
+
+    return () => {
+      window.removeEventListener("scroll", handleNav)
+    }
+  }, [])
+
   return (
-    <nav className="nav">
+    <nav className={`nav ${sticky ? "sticky" : ""}`}>
       <div className="nav__logo-box">
         <Link to="/" className="nav__logo">
           restoran

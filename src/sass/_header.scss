@@ -1,22 +1,21 @@
 .header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.644), rgba(0, 0, 0, 0.603)),
-    url(../images//about_img-2.jpeg);
+    url(../images/back-img.jpg);
+  // background: linear-gradient(rgba(0, 0, 0, 0.644), rgba(0, 0, 0, 0.603));
   height: 100vh;
   background-position: center;
   background-size: cover;
   font-size: 26px;
   color: #fff;
+
   &__text-box {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding-top: 25rem;
-
-    // @media only screen and (max-width: $bp-small) {
-    //   margin: 0 auto;
-    //   text-align: center;
-    // }
+    // height: 100%;
+    // background: linear-gradient(rgba(0, 0, 0, 0.644), rgba(0, 0, 0, 0.603));
   }
 }
 
