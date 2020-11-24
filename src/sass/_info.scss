@@ -1,53 +1,51 @@
 .info {
-    background-color: $color-grey-light;
+  background-color: $color-grey-light;
 
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    align-items: center;
+    justify-content: center;
+  }
 
-    &__container {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-        align-items: center;
-        justify-content: center;
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30rem;
+    height: 18rem;
+    margin: 0 auto;
+    background-color: $color-white;
+    box-shadow: 0 2rem 3rem rgba(#000, 0.2);
+
+    @media only screen and (max-width: $bp-medium) {
+      margin-bottom: 2rem;
     }
+  }
 
-    &__item {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 30rem;
-        height: 18rem;
-        margin: 0 auto;
-        background-color: $color-white;
-        box-shadow: 0 2rem 3rem rgba(#000, .2);
+  &__icon-box {
+    width: 100%;
+    height: 3.4rem;
+    background-color: $color-prim-light;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
 
-        @media only screen and (max-width: $bp-medium) {
-            margin-bottom: 2rem;
-        }
-    }
+  &__icon {
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $color-second;
+  }
 
-    &__icon-box {
-        width: 6rem;
-        height: 6rem;
-        border-radius: 50%;
-         background-color: $color-prim-light;
-         display: flex;
-         justify-content: center;
-         align-items: center;
-         margin-bottom: 2rem;
-    }
-
-    &__icon{
-        font-size: 3rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: $color-second;
-    }
-
-    &__text {
-        color: $color-prim;
-        margin-top: 1.3rem;
-        font-weight: 300;
-        font-size: 1.6rem;
-    }
+  &__text {
+    color: $color-prim;
+    margin-top: 1.3rem;
+    font-weight: 300;
+    font-size: 1.6rem;
+  }
 }
