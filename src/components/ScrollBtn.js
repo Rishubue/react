@@ -8,18 +8,24 @@ const ScrollBtn = () => {
   const goToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" })
   }
+
   const handleScoll = () => {
-    if (window.pageYOffset > 300) {
-      console.log(window.pageYOffset)
+    let position = window.pageYOffset
+
+    if (position > 300) {
       setStick(true)
+    } else if (position < 300) {
+      setStick(false)
+    } else {
+      setStick(false)
     }
   }
 
   useEffect(() => {
-    window.addEventListener("scroll", handleScoll())
+    window.addEventListener("scroll", handleScoll)
 
     return () => {
-      window.removeEventListener("scroll", handleScoll())
+      window.removeEventListener("scroll", handleScoll)
     }
   }, [])
 

@@ -2,15 +2,15 @@ import styled, { css } from "styled-components"
 
 export const Btn = styled.div`
   position: fixed;
-  right: 3rem;
+  right: 2rem;
   bottom: 6rem;
   z-index: 999;
   opacity: 0;
   visibility: hidden;
-  background-color: #fff;
-  border: 2px solid #333;
-  width: 6rem;
-  height: 6rem;
+  background-color: #fcfcfc;
+  border: 2px solid #0f161f;
+  width: 5rem;
+  height: 5rem;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -28,11 +28,12 @@ export const Btn = styled.div`
       : ""}
 
   &:hover {
-    background-color: seagreen;
+    background-color: #f1f1f1;
+    transform: translateY(5px);
   }
 
   .icon {
-    font-size: 3rem;
-    color: #333;
+    font-size: 2.4rem;
+    color: #0f161f;
   }
 `
