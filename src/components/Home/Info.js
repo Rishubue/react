@@ -1,10 +1,11 @@
 import React from "react"
+import Title from "../Title"
 import contact from "../../constans/contact"
 
 const Info = () => {
   return (
     <section className="info">
-      <h2 className="heading-2 margin-bottom-medium">Do nas je lako doci</h2>
+      <Title title="do nas je lako doci" />
       <div className="row">
         <div className="info__container">
           {contact.map(item => {

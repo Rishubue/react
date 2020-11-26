@@ -38,9 +38,9 @@ const Navbar = () => {
         </Link>
       </div>
       <ul className={`nav__list ${isOpen ? "active" : ""}`}>
-        {links.map(link => {
+        {links.map((link, index) => {
           return (
-            <li className="nav__item">
+            <li className="nav__item" key={index}>
               <Link to={link.path} className="nav__link">
                 {" "}
                 {link.text}
