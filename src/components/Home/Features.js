@@ -1,11 +1,12 @@
 import React from "react"
 import icons from "../../constans/icons"
+import Title from "../Title"
 
 const Features = () => {
   return (
     <section className="features">
       <div className="row">
-        <h2 className="heading-2 margin-bottom-big">uvek ce vas docekati</h2>
+        <Title title="uvek ce vas docekati" />
         <div className="features__container">
           {icons.map((icon, index) => {
             return (

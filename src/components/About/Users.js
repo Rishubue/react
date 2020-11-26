@@ -1,4 +1,5 @@
 import React from "react"
+import Title from "../Title"
 import { useStaticQuery, graphql } from "gatsby"
 import SwiperCore, { Navigation } from "swiper"
 import { Swiper, SwiperSlide } from "swiper/react"
@@ -45,9 +46,7 @@ const Users = () => {
   return (
     <section className="users">
       <div className="row">
-        <h2 className="heading-2 margin-bottom-medium">
-          sta drugi kazu o nama
-        </h2>
+        <Title title="sta drugi kazu o nama" />
         <div className="users__container">
           <Swiper {...settings}>
             {users.nodes.map(user => {

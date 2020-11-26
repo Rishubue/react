@@ -1,5 +1,7 @@
 import React from "react"
 import Image from "gatsby-image"
+import Title from "../Title"
+
 import { useStaticQuery, graphql } from "gatsby"
 
 const getMeals = graphql`
@@ -23,7 +25,7 @@ const Meals = () => {
 
   return (
     <section className="meals">
-      <h2 className="heading-2 margin-bottom-medium">Izdvajamo iz ponude</h2>
+      <Title title="izvdajamo iz ponude" />
       <div className="row">
         <div className="meals__container">
           {meals.nodes.map(meal => {
