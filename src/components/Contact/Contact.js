@@ -6,7 +6,12 @@ const Contact = () => {
       <h2 className="contact__heading">kontakt poruka</h2>
       <div className="row">
         <div className="contact__container margin-bottom-bigest">
-          <form id="form" className="contact__form">
+          <form
+            action="https://formspree.io/f/xwkwnale"
+            method="POST"
+            id="form"
+            className="contact__form"
+          >
             <div className="contact__top">
               <input
                 type="text"
