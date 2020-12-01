@@ -2,13 +2,8 @@ import React, { useState, useEffect } from "react"
 import { Link } from "gatsby"
 import links from "../constans/links"
 
-const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false)
+const Navbar = ({ toggleNav }) => {
   const [sticky, setSticky] = useState(false)
-  const toggleNav = () => {
-    setIsOpen(isOpen => !isOpen)
-    console.log(isOpen)
-  }
 
   const handleNav = () => {
     let position = window.pageYOffset
@@ -37,7 +32,7 @@ const Navbar = () => {
           restoran
         </Link>
       </div>
-      <ul className={`nav__list ${isOpen ? "active" : ""}`}>
+      <ul className="nav__list">
         {links.map((link, index) => {
           return (
             <li className="nav__item" key={index}>
