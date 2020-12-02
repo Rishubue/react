@@ -7,10 +7,15 @@ import Features from "../components/Home/Features"
 import Events from "../components/Home/Events"
 import Users from "../components/About/Users"
 import Info from "../components/Home/Info"
+import SEO from "../components/SEO"
 
 export default function Home() {
   return (
     <Layout>
+      <SEO
+        title="Početna strana"
+        description="tema za potrebe restorana uradjena u gecbiju"
+      />
       <About />
       <Meals />
       <Menu />
