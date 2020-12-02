@@ -9,12 +9,17 @@ require("dotenv").config({
 })
 
 module.exports = {
-  /* Your site config here */
+  siteMetadata: {
+    title: "Restoran Tema",
+    description: "gatsby tema za potrebe restorana",
+    author: "@johan",
+  },
   plugins: [
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-styled-components`,
+    `gatsby-plugin-react-helmet`,
 
     {
       resolve: `gatsby-source-filesystem`,
