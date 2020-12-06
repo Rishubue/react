@@ -28,9 +28,9 @@ const Meals = () => {
       <Title title="izvdajamo iz ponude" />
       <div className="row">
         <div className="meals__container">
-          {meals.nodes.map(meal => {
+          {meals.nodes.map((meal, index) => {
             return (
-              <div className="meals__item">
+              <div className="meals__item" key={index}>
                 <Image className="meals__img" fluid={meal.image.fluid} alt="" />
                 <h4 className="meals__title margin-bottom-small">
                   {meal.title}

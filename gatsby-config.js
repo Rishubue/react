@@ -37,6 +37,17 @@ module.exports = {
     },
 
     {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Dancing Script`,
+          `Poppins\:300,400,500`, // you can also specify font weights and styles
+        ],
+        display: "block",
+      },
+    },
+
+    {
       resolve: `gatsby-source-contentful`,
       options: {
         spaceId: process.env.CONTENTFUL_SPACE_ID,

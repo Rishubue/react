@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react"
 import Hero from "../Hero/Hero"
 import Footer from "../Footer"
 import ScrollBtn from "../ScrollBtn"
+
 import "../../sass/main.scss"
 
 const Layout = ({ children }) => {
@@ -13,7 +14,6 @@ const Layout = ({ children }) => {
 
   useEffect(() => {
     if (document.readyState === "complete") {
-      console.log("test")
       loaded()
     }
   }, [loading])
@@ -31,7 +31,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Hero />
-      <section>{children}</section>
+      {children}
       <ScrollBtn />
       <Footer />
     </>

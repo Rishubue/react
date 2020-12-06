@@ -12,8 +12,8 @@ const HeroGallery = () => {
     <header className="header-gallery">
       <Navbar toggleNav={toggleNav} />
       <Sidebar isOpen={isOpen} toggleNav={toggleNav} />
-      <div class="header-gallery__text-box">
-        <h1 class="logo-text margin-bottom-smallest">Galerija restorana</h1>
+      <div className="header-gallery__text-box">
+        <h1 className="logo-text margin-bottom-smallest">Galerija restorana</h1>
       </div>
     </header>
   )

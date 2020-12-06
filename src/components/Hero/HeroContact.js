@@ -12,8 +12,8 @@ const HeroContact = () => {
     <header className="header-contact">
       <Navbar toggleNav={toggleNav} />
       <Sidebar isOpen={isOpen} toggleNav={toggleNav} />
-      <div class="header-contact__text-box">
-        <h1 class="logo-text margin-bottom-smallest">Kontakt</h1>
+      <div className="header-contact__text-box">
+        <h1 className="logo-text margin-bottom-smallest">Kontakt</h1>
       </div>
     </header>
   )

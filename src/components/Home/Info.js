@@ -8,9 +8,9 @@ const Info = () => {
       <Title title="do nas je lako doci" />
       <div className="row">
         <div className="info__container">
-          {contact.map(item => {
+          {contact.map((item, index) => {
             return (
-              <div className="info__item">
+              <div className="info__item" key={index}>
                 <div className="info__icon-box">
                   <div href="#" className="info__icon">
                     {item.icon}
