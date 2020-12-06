@@ -15,6 +15,8 @@
     font-size: 4rem;
     cursor: pointer;
     transition: all 0.3s ease;
+    color: $color-white;
+    z-index: 999;
 
     &:hover {
       transform: translateY(-0.5rem);

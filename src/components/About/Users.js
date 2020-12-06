@@ -13,7 +13,6 @@ const settings = {
   loop: true,
   grabCursor: true,
   centeredSlides: true,
-  slidesPerView: "auto",
   coverflowEffect: {
     rotate: 520,
     stretch: 0,
@@ -51,11 +50,11 @@ const Users = () => {
           <Swiper {...settings}>
             {users.nodes.map(user => {
               return (
-                <SwiperSlide slidesPerView={1} navigation>
+                <SwiperSlide slidesPerView={1} navigation key={user.id}>
                   <div className="swiper-container">
                     <div className="swiper-wrapper">
                       <div className="swiper-slide">
-                        <div className="users__item" key={user.id}>
+                        <div className="users__item">
                           <div className="users__heading">
                             <h4 className="users__name">{user.name}</h4>
                             <div className="users__icon--box">
@@ -70,10 +69,10 @@ const Users = () => {
                         </div>
                       </div>
                     </div>
-                    <div class="swiper-pagination"></div>
+                    <div className="swiper-pagination"></div>
 
-                    <div class="swiper-button-next users__arrows"></div>
-                    <div class="swiper-button-prev users__arrows"></div>
+                    <div className="swiper-button-next users__arrows"></div>
+                    <div className="swiper-button-prev users__arrows"></div>
                   </div>
                 </SwiperSlide>
               )

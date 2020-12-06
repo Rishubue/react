@@ -35,5 +35,6 @@ export const Btn = styled.div`
   .icon {
     font-size: 2.4rem;
     color: #0f161f;
+    transition: all 0.3s ease;
   }
 `

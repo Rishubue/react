@@ -1,12 +1,9 @@
 .header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.644), rgba(0, 0, 0, 0.603)),
-    url(../images/back-img.jpg);
-  // background: linear-gradient(rgba(0, 0, 0, 0.644), rgba(0, 0, 0, 0.603));
   height: 100vh;
   background-position: center;
   background-size: cover;
-  font-size: 26px;
-  color: #fff;
+  position: relative;
+  animation: fade 2s ease-in 1 forwards;
 
   &__text-box {
     display: flex;
@@ -14,8 +11,44 @@
     align-items: center;
     justify-content: center;
     padding-top: 25rem;
-    // height: 100%;
-    // background: linear-gradient(rgba(0, 0, 0, 0.644), rgba(0, 0, 0, 0.603));
+  }
+
+  &__buttons {
+    position: absolute;
+    right: 5%;
+    display: flex;
+  }
+
+  &__btn {
+    cursor: pointer;
+    background-color: rgba($color-prim, 0.9);
+    outline: none;
+    border: 2px solid transparent;
+    margin-right: 1rem;
+    font-size: 3.6rem;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $color-white;
+    transition: all 0.3s;
+
+    &:hover {
+      border: 2px solid $color-second;
+      background-color: rgba($color-black, 1);
+    }
+  }
+}
+
+@keyframes fade {
+  from {
+    background: rgba(0, 0, 0, 0.801);
+  }
+
+  to {
+    background: rgba(0, 0, 0, 0.6);
   }
 }
 
