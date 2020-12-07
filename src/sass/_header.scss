@@ -48,17 +48,15 @@
   }
 
   to {
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.5);
   }
 }
 
 .header-about {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.808), rgba(0, 0, 0, 0.719)),
-    url(../images/salad.jpg);
   height: 60vh;
   background-position: center;
   background-size: cover;
-  color: #fff;
+  animation: fade 2s ease-in 1 forwards;
 
   &__text-box {
     display: flex;
@@ -71,12 +69,10 @@
 }
 
 .header-gallery {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.808), rgba(0, 0, 0, 0.719)),
-    url(../images/hero-1.jpeg);
   height: 60vh;
   background-position: center;
   background-size: cover;
-  color: #fff;
+  animation: fade 2s ease-in 1 forwards;
 
   &__text-box {
     display: flex;
@@ -89,12 +85,10 @@
 }
 
 .header-contact {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.808), rgba(0, 0, 0, 0.719)),
-    url(../images/hero.jpg);
   height: 60vh;
   background-position: center;
   background-size: cover;
-  color: #fff;
+  animation: fade 2s ease-in 1 forwards;
 
   &__text-box {
     display: flex;
