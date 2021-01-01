@@ -1,12 +1,12 @@
 import React from "react"
 import BackgroundImage from "gatsby-background-image"
 
-const Background = ({ children, image }) => {
+const Background = ({ children, fluid, defClass }) => {
   return (
     <BackgroundImage
       Tag="header"
-      className="header"
-      fluid={image}
+      className={defClass || `header`}
+      fluid={fluid}
       preserveStackingContext={true}
     >
       {children}

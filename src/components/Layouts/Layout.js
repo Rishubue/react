@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react"
-import Hero from "../Hero/Hero"
+import Navbar from "../Navbar"
+import Sidebar from "../Sidebar"
 import Footer from "../Footer"
 import ScrollBtn from "../ScrollBtn"
 
@@ -7,6 +8,11 @@ import "../../sass/main.scss"
 
 const Layout = ({ children }) => {
   const [loading, setLoading] = useState(true)
+  const [isOpen, setIsOpen] = useState(false)
+
+  const toggleNav = () => {
+    setIsOpen(!isOpen)
+  }
 
   const loaded = () => {
     setLoading(false)
@@ -30,7 +36,8 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Hero />
+      <Navbar toggleNav={toggleNav} />
+      <Sidebar isOpen={isOpen} toggleNav={toggleNav} />
       {children}
       <ScrollBtn />
       <Footer />

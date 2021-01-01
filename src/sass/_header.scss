@@ -3,16 +3,8 @@
   background-position: center;
   background-size: cover;
   position: relative;
+  margin-top: -7.5rem;
   animation: fade 2s ease-in 1 forwards;
-
-  &__text-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-top: 25rem;
-  }
-
   &__buttons {
     position: absolute;
     right: 5%;
@@ -42,6 +34,26 @@
   }
 }
 
+.header-small {
+  height: 60vh;
+  margin-top: -12.5rem;
+  background-position: center;
+  background-size: cover;
+  background-color: rgba($color-prim, 0.7);
+  animation: fade 2s ease-in 1 forwards;
+  position: relative;
+}
+
+.text-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 @keyframes fade {
   from {
     background: rgba(0, 0, 0, 0.801);
@@ -49,53 +61,5 @@
 
   to {
     background: rgba(0, 0, 0, 0.5);
-  }
-}
-
-.header-about {
-  height: 60vh;
-  background-position: center;
-  background-size: cover;
-  animation: fade 2s ease-in 1 forwards;
-
-  &__text-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-top: 18rem;
-    text-align: center;
-  }
-}
-
-.header-gallery {
-  height: 60vh;
-  background-position: center;
-  background-size: cover;
-  animation: fade 2s ease-in 1 forwards;
-
-  &__text-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-top: 18rem;
-    text-align: center;
-  }
-}
-
-.header-contact {
-  height: 60vh;
-  background-position: center;
-  background-size: cover;
-  animation: fade 2s ease-in 1 forwards;
-
-  &__text-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-top: 18rem;
-    text-align: center;
   }
 }
